@@ -130,9 +130,12 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# ZSH-syntax-highlighting, must be kept at the end of ~/.zshrc 
+# ZSH-syntax-highlighting, must be kept near the end of ~/.zshrc 
 source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Needed to activate highlighters 
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 # Enables "rm-rf" commands to display a warning
 ZSH_HIGHLIGHT_PATTERNS=("rm -rf" "fg=white,bold,bg=red")
+
+# run rbenv as default
+eval "$(rbenv init -)"
